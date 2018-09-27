@@ -1,0 +1,37 @@
+body {
+    background-color: pink;
+}
+
+.name {
+    letter-spacing: 5px !important;
+}
+
+.container {
+    margin-top: 2%;
+}
+
+.mePic img {
+    height: 40%;
+    width: auto;
+    border-radius: 20px;
+}
+
+h5 {
+    color: black;
+}
+
+.carousel-item {
+    height: 500px !important;
+    width: auto !important;
+}
+
+.carousel-caption {
+    color: black;
+    font-size: 30px;
+    text-shadow:
+    -1px -1px 0 white,
+    1px -1px 0 white,
+    -1px 1px 0 white,
+    1px 1px 0 white;
+
+}
