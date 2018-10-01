@@ -1,37 +1,169 @@
 body {
-    background-color: pink;
+    background-image: url('images/binding_light.png');
 }
 
-.name {
-    letter-spacing: 5px !important;
+.navbar {
+    background-color: #753337 !important;
+    margin-bottom: 2%;
+}
+
+.navbar a {
+    color: #f7d1b5 !important;
+    
+}
+
+.navbar .name {
+    font-family: 'Pacifico', cursive;
+    font-size: 30px;
+
+}
+
+.navbar a:hover {
+    opacity: 0.75;
 }
 
 .container {
-    margin-top: 2%;
+    /* margin: 20px, 0, 20px, 0; */
+    background-color: #f7d1b5;
+    color: #0b4a58;
+    border-radius: 20px;
+    margin-bottom: 2%;
+}
+
+.header {
+    border-bottom: dotted;
+    border-color: #0b4a58
 }
 
 .mePic img {
-    height: 40%;
+    height: 400px;
     width: auto;
     border-radius: 20px;
+    padding: 2%;
 }
 
 h5 {
     color: black;
 }
 
-.carousel-item {
+.buttonsRow {
+    position: relative;
+    margin-top: -10px;
+}
+
+.icon {
+    font-size: 100px;
+    display: inline;
+    text-align: center;
+}
+
+.icon a {
+    color: #0b4a58;
+
+}
+
+
+
+
+.caption {
+    visibility: hidden;
+    position: relative;
+    top: -50px;
+    background-color: #b87620;
+    padding: 7px;
+    margin-bottom: -20px;
+    font-size: 15px;
+    border-radius: 20px;
+
+}
+
+
+.icon a:hover{
+    color: 	#658288;
+}
+
+.icon a:hover + .caption {
+    visibility: visible;
+}
+
+.icon p:hover + .caption {
+    visibility: visible;
+}
+
+.carousel {
+    margin: 30px;
     height: 500px !important;
+}
+
+.carousel-item {
+    height: 400px !important;
     width: auto !important;
 }
 
 .carousel-caption {
-    color: black;
-    font-size: 30px;
-    text-shadow:
-    -1px -1px 0 white,
-    1px -1px 0 white,
-    -1px 1px 0 white,
-    1px 1px 0 white;
+    color: #0b4a58;
+    background-color: #b87620;
+    position: absolute;
+    height: 70px;
+    border-radius: 20px;
 
 }
+
+.slides {
+    background-color: #0b4a58;
+}
+
+.footer {
+    background-color: #b87620;
+    height: 20px;
+    width: 100%;
+    font-size: 10px;
+    color: #f7d1b5;
+    text-align: center;
+    position: fixed;
+    bottom: 0px;
+}
+
+.contactDiv {
+    padding-bottom: 40px;
+}
+
+@media screen and (max-width: 1000px) {
+    .mePic img {
+        height: 300px;
+        width: auto;
+    }
+    .carousel {
+        margin: 30px;
+        height: 250px !important;
+    }
+    
+    .carousel-item {
+        height: 200px !important;
+        width: auto !important;
+    }
+
+
+
+}
+
+@media screen and (max-width: 780px) {
+    .aboutDiv {
+        text-align: center;
+    }
+
+    ul {
+        text-align: left;
+    }
+    .caption {
+        visibility: visible;
+        top: -20px;
+        }
+
+    .mePic img {
+        height: 250px;
+        align-content: center;
+    }
+}
+
+
