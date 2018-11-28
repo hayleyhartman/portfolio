@@ -139,10 +139,18 @@ body {
     bottom: 0px;
 }
 
+@media screen and (max-width: 1200px) {
+    .list {
+        text-align: center;
+    }
+    ul {
+        text-align: left
+    }
+}
+
 @media screen and (max-width: 1000px) {
     .mePic img {
-        height: 300px;
-        width: auto;
+        display: none; 
     }
 
 
@@ -156,6 +164,9 @@ body {
         width: auto !important;
     }
 
+    /* .list {
+        visibility: hidden;
+    } */
 
 
 }
@@ -180,6 +191,8 @@ body {
     .contactDiv {
         padding-bottom: 20px;
     }
+
+
 }
 
 
