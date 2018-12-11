@@ -37,12 +37,25 @@ body {
     border-color: #0b4a58
 }
 
-.aboutDiv h2{
-    border: 2px dotted white;
-    margin-top: 10px;
-    padding: 0px, 40px;
-    text-align: center;
+.aboutDiv {
+    padding: 1%;
+}
 
+.bio {
+    border: 2px dotted white;
+    margin: auto, auto;
+    padding: 10px;;
+    text-align: center;
+    font-size: 28px;
+    margin-left: 70px;
+}
+
+.stackHead {
+    font-size: 27px;
+}
+
+.list {
+    padding-left: 70px;
 }
 
 .mePic img {
@@ -140,8 +153,14 @@ body {
 }
 
 @media screen and (max-width: 1200px) {
+    .bio {
+        font-size: 22px;
+        margin-left: 90px;
+    }
+
     .list {
         text-align: center;
+        padding-left: 10px;
     }
     ul {
         text-align: left
@@ -153,6 +172,9 @@ body {
         display: none; 
     }
 
+    .bio {
+        margin-left: 0px;
+    }
 
     .carousel {
         margin: 30px;
@@ -164,16 +186,16 @@ body {
         width: auto !important;
     }
 
-    /* .list {
-        visibility: hidden;
-    } */
-
 
 }
 
 @media screen and (max-width: 780px) {
     .aboutDiv {
         text-align: center;
+    }
+
+    .bio {
+        font-size: 18px;
     }
 
     ul {
@@ -183,11 +205,7 @@ body {
         visibility: visible;
         top: -20px;
         }
-
-    .mePic img {
-        height: 250px;
-        align-content: center;
-    }
+        
     .contactDiv {
         padding-bottom: 20px;
     }
