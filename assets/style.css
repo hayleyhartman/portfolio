@@ -70,8 +70,7 @@ body {
   
     .section {
       padding: 20px;
-      margin-top: 20px;
-      margin-right: 20px;
+      margin: 20px;
       border-radius: 10px;
       background-color: #191919;
       transition-property: background-color;
@@ -80,6 +79,26 @@ body {
   
     .section:hover {
       background-color: #323232;
+    }
+
+    @media only screen and (max-width: 1388px) {
+        
+        span {
+            position: relative;
+            display: block;
+            font-size: 4em;
+        }
+
+        .about {
+            position: relative;
+            top: 250px;
+            display: block;
+            
+        }
+        
+        .cardsDiv {
+            display: none;
+        }
     }
   
 
