@@ -1,217 +1,85 @@
 body {
-    background-image: url('images/binding_light.png');
-}
-
-.navbar {
-    margin-bottom: 2%;
-}
-.navbar a {
-    color: #F7B688 !important;
-    font-size: 20px;
-    
-}
-
-.navbar .name {
-    font-family: 'Pacifico', cursive;
-    font-size: 30px;
-
-}
-
-.navbar a:hover {
-    opacity: 0.75;
-}
-
-.navbar .current:hover {
-    opacity: 1;
-}
-
-.container {
-    /* margin: 20px, 0, 20px, 0; */
-    background-color: #F7B688;
-    color: #0b4a58;
-    border-radius: 20px;
-    margin-bottom: 2%;
-}
-
-.header {
-    border-bottom: dotted;
-    border-color: #0b4a58
-}
-
-.aboutDiv {
-    padding: 1%;
-}
-
-.bio {
-    border: 2px dotted white;
-    margin: auto, auto;
-    padding: 10px;;
-    text-align: center;
-    font-size: 28px;
-    margin-left: 70px;
-}
-
-.stackHead {
-    font-size: 27px;
-}
-
-.list {
-    padding-left: 70px;
-}
-
-.mePic img {
-    height: 400px;
-    width: auto;
-    border-radius: 20px;
-    padding: 2%;
-}
-
-.buttonsRow {
-    position: relative;
-    margin-top: -10px;
-}
-
-.icon {
-    font-size: 100px;
-    display: inline;
-    text-align: center;
-}
-
-.icon a {
-    color: #0b4a58;
-
-}
-
-.caption {
-    visibility: hidden;
-    position: relative;
-    top: -50px;
-    background-color: white;
-    padding: 7px;
-    margin-bottom: -20px;
-    font-size: 15px;
-    border-radius: 20px;
-}
-
-.icon a:hover{
-    color: 	#658288;
-}
-
-.icon i:hover + .caption {
-    visibility: visible;
-    color: #0b4a58;
-}
-
-.icon p:hover + .caption {
-    visibility: visible;
-}
-
-.resume h2 {
-    border: 2px dotted white;
-    text-align: center;
-}
-/* 
-.resume ul {
-    text-align: center;
-} */
-
-.carousel {
-    margin: 30px;
-    height: 500px !important;
-}
-
-.carousel-item {
-    height: 400px !important;
-    width: auto !important;
-
-}
-
-.portfolioDiv a :hover {
-    color: #658288;
-}
-
-.carousel-caption {
-    color: #F7B688;
-    background-color: #0b4a58;
-    position: absolute;
-    height: 70px;
-    border-radius: 20px;
-}
-
-.slides {
-    background-color: #0b4a58;
-}
-
-.footer {
-    background-color: white;;
-    height: 20px;
-    width: 100%;
-    font-size: 10px;
-    color: #F7B688;
-    text-align: center;
-    position: fixed;
-    bottom: 0px;
-}
-
-@media screen and (max-width: 1200px) {
-    .bio {
-        font-size: 22px;
-        margin-left: 90px;
+    background-color: #000000;
+    color: #f8f8f8;
+    font-family: 'montserrat', sans-serif;
+    font-weight: lighter;
+  
+  }
+  
+  .container-fluid {
+      padding: 20px;
+      width: 100%
+  }
+  .name {
+      height: 100vh;
+      line-height: 100vh;
+      position: fixed;
+      left: 0;
+      font-weight: bold;
     }
-
-    .list {
-        text-align: center;
-        padding-left: 10px;
+    span {
+      display: inline-block;
+      font-size: 6em;
+      vertical-align: middle;
+      line-height: normal;
     }
-    ul {
-        text-align: left
-    }
-}
-
-@media screen and (max-width: 1000px) {
-    .mePic img {
-        display: none; 
-    }
-
-    .bio {
-        margin-left: 0px;
-    }
-
-    .carousel {
-        margin: 30px;
-        height: 250px !important;
+  
+    .about {
+      position: absolute;
+      right: 0px;
     }
     
-    .carousel-item {
-        height: 200px !important;
-        width: auto !important;
+    .section h2 {
+      text-align: left;
     }
-
-
-}
-
-@media screen and (max-width: 780px) {
-    .aboutDiv {
-        text-align: center;
+  
+    .portRow {
+      width: 100%;
     }
-
-    .bio {
-        font-size: 18px;
+  
+    a {
+      color: #999999;
+      transition-property: color;
+      transition-duration: .4s;
     }
-
-    ul {
-        text-align: left;
+  
+    a:hover {
+      color: #f8f8f8 !important
     }
-    .caption {
-        visibility: visible;
-        top: -20px;
-        }
-        
-    .contactDiv {
-        padding-bottom: 20px;
+  
+    .card {
+      height: 21rem;
+      width: auto;
+      margin-top: 20px;
+      border-bottom: 1px, solid, white;
+      /* margin-right: 0px; */
     }
-
-
-}
-
+  
+    .card-body {
+      background-color: black;
+    }
+  
+    .card-img-top {
+      height: 11rem;
+      width: auto;
+    }
+  
+    h6 {
+      text-align: center;
+    }
+  
+    .section {
+      padding: 20px;
+      margin-top: 20px;
+      margin-right: 20px;
+      border-radius: 10px;
+      background-color: #191919;
+      transition-property: background-color;
+      transition-duration: .4s;
+    }
+  
+    .section:hover {
+      background-color: #323232;
+    }
+  
 
