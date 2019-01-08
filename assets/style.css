@@ -1,7 +1,7 @@
 body {
     background-color: #000000;
     color: #f8f8f8;
-    font-family: 'montserrat', sans-serif;
+    font-family: 'roboto slab', serif;
     font-weight: lighter;
   
   }
@@ -16,6 +16,7 @@ body {
       position: fixed;
       left: 0;
       font-weight: bold;
+      font-family: 'montserrat', sans-serif;
     }
     span {
       display: inline-block;
@@ -31,6 +32,16 @@ body {
     
     .section h2 {
       text-align: left;
+      font-family: 'montserrat', sans-serif;
+
+    }
+
+    .smallName {
+      display: none;
+    }
+
+    .empty {
+      height: 100%;
     }
   
     .portRow {
@@ -83,10 +94,12 @@ body {
 
     @media only screen and (max-width: 1388px) {
         
-        span {
-            position: relative;
-            display: block;
-            font-size: 4em;
+        .name {
+            display: none;
+        }
+
+        .smallName {
+          display: inline;
         }
 
         .about {
