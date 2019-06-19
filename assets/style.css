@@ -1,6 +1,6 @@
 body {
-    background-color: #000000;
-    color: #f8f8f8;
+    background-color: #00100B;
+    color: #EEE0CB;
     font-family: 'roboto slab', serif;
     font-weight: lighter;
   
@@ -65,7 +65,6 @@ body {
       height: 18rem;
       width: auto;
       margin-top: 2em;
-      overflow: scroll;
     }
   
     .card-body {
@@ -85,10 +84,21 @@ body {
     .section {
       padding: 1.5em;
       margin: 1.5em;
-      border-radius: 1em;
       background-color: #191919;
       transition-property: background-color;
       transition-duration: .4s;
+    }
+
+    .section:after {
+      display: block;
+      content:'';
+      border-bottom: solid 1px #c2847a;
+      transform: scaleX(0);
+      transition: transform 250ms ease-in-out;
+    }
+
+    section:after:hover {
+      transform: scaleX(1)
     }
   
     .section:hover {
@@ -110,10 +120,6 @@ body {
     .matchPadding {
       padding-left: 15px;
       padding-right: 15px;
-    }
-
-    .borderPlease {
-      border: 2px solid red !important;
     }
 
 

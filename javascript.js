@@ -36,23 +36,11 @@ window.onload = function(){
         imageDesc:'image of a word guess game',
         caption:'built with: html, bootstrap, javascript, css'
     },{
-        title:'timed quiz',
-        imgLink:'assets/images/quiz.png',
-        deployedLink:'https://hayleyhartman.github.io/TriviaGame/',
-        imageDesc:'image of an online quiz about the items on my desk',
-        caption:'built with: html, bootstrap, javascript, css'
-    },{
         title:'movie recommender',
         imgLink:'assets/images/mood.png',
         deployedLink:'https://fka-hufflepuff.github.io/api-project/',
         imageDesc:'image of six emjois displaying different emotions sitting next to each other',
         caption:'built with: html, javascript, css, youtube api, omdb api'
-    },{
-        title:'gif search',
-        imgLink:'assets/images/gifs.png',
-        deployedLink:'https://hayleyhartman.github.io/gif-project/',
-        imageDesc:'image of page full of gifs',
-        caption:'built with: html, bootstrap, javascript, css, giphy api'
     }]
 
     projects.map(({
