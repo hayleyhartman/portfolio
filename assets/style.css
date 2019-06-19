@@ -1,160 +1,161 @@
 body {
-    background-color: #00100B;
-    color: #EEE0CB;
-    font-family: 'roboto slab', serif;
-    font-weight: lighter;
-  
+  background-color: #00100B;
+  color: #EEE0CB;
+  font-family: 'roboto slab', serif;
+  font-weight: lighter;
+
+}
+
+.container-fluid {
+  padding: 2em;
+  width: 100%
+}
+
+.name {
+  height: 100vh;
+  line-height: 100vh;
+  position: fixed;
+  left: 0;
+  font-weight: bold;
+  font-family: 'montserrat', sans-serif;
+}
+
+.bigName {
+  display: inline-block;
+  font-size: 6em;
+  vertical-align: middle;
+  line-height: normal;
+}
+
+.about {
+  position: absolute;
+  right: 0px;
+  padding: 0;
+}
+
+.section h2 {
+  text-align: left;
+  font-family: 'montserrat', sans-serif;
+
+}
+
+.smallName {
+  display: none;
+}
+
+.empty {
+  height: 100vh;
+  width: 100%;
+}
+
+.portRow {
+  width: 100%;
+  height: 100%
+}
+
+a {
+  color: #999999;
+  transition-property: color;
+  transition-duration: .4s;
+}
+
+a:hover {
+  color: #f8f8f8 !important
+}
+
+.card {
+  height: 18rem;
+  width: auto;
+  margin-top: 2em;
+}
+
+.card-body {
+  background-color: black;
+  padding: .5em;
+}
+
+.card-img-top {
+  height: 11rem;
+  width: auto;
+}
+
+h6 {
+  text-align: center;
+}
+
+.section {
+  padding: 1.5em;
+  margin: 1.5em;
+  background-color: #191919;
+  transition-property: background-color;
+  transition-duration: .4s;
+}
+
+.section:after {
+  display: block;
+  content: '';
+  border-bottom: solid 1px #c2847a;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+}
+
+section:after:hover {
+  transform: scaleX(1)
+}
+
+.section:hover {
+  background-color: #323232;
+}
+
+.smallSectionLeft {
+  margin-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.smallSectionRight {
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.matchPadding {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+
+@media only screen and (max-width: 1200px) {
+  .bigName {
+    font-size: 4.8em;
   }
-  
-  .container-fluid {
-      padding: 2em;
-      width: 100%
+
+  .smallSectionLeft,
+  .smallSectionRight {
+    margin: 0 1.5em;
   }
+
+  .smallSectionLeft {
+    margin-top: 1.5em;
+  }
+
+}
+
+@media only screen and (max-width: 991.98px) {
   .name {
-      height: 100vh;
-      line-height: 100vh;
-      position: fixed;
-      left: 0;
-      font-weight: bold;
-      font-family: 'montserrat', sans-serif;
-    }
-    .bigName {
-      display: inline-block;
-      font-size: 6em;
-      vertical-align: middle;
-      line-height: normal;
-    }
-  
-    .about {
-      position: absolute;
-      right: 0px;
-      padding: 0;
-    }
-    
-    .section h2 {
-      text-align: left;
-      font-family: 'montserrat', sans-serif;
+    display: inline;
+    text-align: center;
+    position: absolute;
+  }
 
-    }
+  .about {
+    position: relative;
+    display: block;
+  }
+}
 
-    .smallName {
-      display: none;
-    }
-
-    .empty {
-      height: 100vh;
-      width: 100%;
-    }
-  
-    .portRow {
-      width: 100%;
-      height: 100%
-    }
-  
-    a {
-      color: #999999;
-      transition-property: color;
-      transition-duration: .4s;
-    }
-  
-    a:hover {
-      color: #f8f8f8 !important
-    }
-  
-    .card {
-      height: 18rem;
-      width: auto;
-      margin-top: 2em;
-    }
-  
-    .card-body {
-      background-color: black;
-      padding: .5em;
-    }
-  
-    .card-img-top {
-      height: 11rem;
-      width: auto;
-    }
-  
-    h6 {
-      text-align: center;
-    }
-  
-    .section {
-      padding: 1.5em;
-      margin: 1.5em;
-      background-color: #191919;
-      transition-property: background-color;
-      transition-duration: .4s;
-    }
-
-    .section:after {
-      display: block;
-      content:'';
-      border-bottom: solid 1px #c2847a;
-      transform: scaleX(0);
-      transition: transform 250ms ease-in-out;
-    }
-
-    section:after:hover {
-      transform: scaleX(1)
-    }
-  
-    .section:hover {
-      background-color: #323232;
-    }
-
-    .smallSectionLeft {
-      margin-left: 0;
-      margin-top: 0;
-      margin-bottom: 0;
-    }
-
-    .smallSectionRight {
-      margin-right: 0;
-      margin-top: 0;
-      margin-bottom: 0;
-    }
-
-    .matchPadding {
-      padding-left: 15px;
-      padding-right: 15px;
-    }
-
-
-    @media only screen and (max-width: 1200px) {
-      .bigName {
-         font-size: 4.8em;
-      }
-
-      .smallSectionLeft, .smallSectionRight {
-        margin: 0 1.5em;
-      }
-
-      .smallSectionLeft {
-        margin-top: 1.5em;
-      }
-
-    }
-
-    @media only screen and (max-width: 991.98px) {
-      .name {
-        display: inline;
-        text-align: center;
-        position: absolute;
-    }
-
-    .about {
-        position: relative;
-        display: block;   
-    }
-    }
-
-    @media only screen and (max-width: 768px) {
-      .cardsDiv {
-        display: none;
-      }
-    }
-  
-
+@media only screen and (max-width: 768px) {
+  .cardsDiv {
+    display: none;
+  }
+}
