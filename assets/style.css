@@ -48,6 +48,10 @@ body {
   margin: 0 .5em;
 }
 
+.languages:last-of-type::after {
+  content: "";
+}
+
 .smallName {
   display: none;
 }
