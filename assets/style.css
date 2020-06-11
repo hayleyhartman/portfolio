@@ -3,7 +3,6 @@ body {
   color: #f8f8f8;
   font-family: 'roboto slab', serif;
   font-weight: lighter;
-
 }
 
 .container-fluid {
@@ -20,7 +19,7 @@ body {
   font-family: 'montserrat', sans-serif;
 }
 
-.bigName {
+.big-name {
   display: inline-block;
   font-size: 6em;
   vertical-align: middle;
@@ -52,18 +51,9 @@ body {
   content: "";
 }
 
-.smallName {
-  display: none;
-}
-
 .empty {
   height: 100vh;
   width: 100%;
-}
-
-.portRow {
-  width: 100%;
-  height: 100%
 }
 
 a {
@@ -90,6 +80,7 @@ a:hover {
 
 .card-img-top {
   height: 11rem;
+  object-fit: cover;
   width: auto;
 }
 
@@ -110,39 +101,35 @@ h6 {
   background-color: #323232;
 }
 
-.smallSectionLeft {
+.section-left--small {
   margin-left: 0;
   margin-top: 0;
   margin-bottom: 0;
 }
 
-.smallSectionRight {
+.section-right--small {
   margin-right: 0;
   margin-top: 0;
   margin-bottom: 0;
 }
 
-.matchPadding {
+.section-tools {
   padding-left: 15px;
   padding-right: 15px;
 }
 
-.borderPlease {
-  border: 2px solid red !important;
-}
-
 
 @media only screen and (max-width: 1200px) {
-  .bigName {
+  .big-name {
     font-size: 4.8em;
   }
 
-  .smallSectionLeft,
-  .smallSectionRight {
+  .section-left--small,
+  .section-right--small {
     margin: 0 1.5em;
   }
 
-  .smallSectionLeft {
+  .section-left--small {
     margin-top: 1.5em;
   }
 
@@ -162,7 +149,7 @@ h6 {
 }
 
 @media only screen and (max-width: 768px) {
-  .cardsDiv {
+  .section-cards {
     display: none;
   }
 }
